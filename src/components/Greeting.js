@@ -1,21 +1,23 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import { getRandomMsg } from "../redux/dataReducer";
+import { getRandomMsg, getRandomMsgSuccess } from "../redux/dataReducer";
 
-const Greeting = () => {
+export default function Message(props) {
+  const { msg } = props;
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getRandomMsg());
-  }, [dispatch]);
-
-  const message = useSelector((state) => state.dataReducer.text);
+  const message = useSelector((state) => state.dataReducer);
+  console.log(message);
   return (
     <div>
-      <button className='getMessageBtn'> Get Random Message</button>
-      <h2>The Message from store is {message}.</h2>
+      <button
+        className='getMessageBtn'
+        onClick={() => dispatch(getRandomMsg())}
+      >
+        {" "}
+        Get Random Message
+      </button>
+      <h2>The Message from store is {message.text}.</h2>
     </div>
   );
-};
-
-export default Greeting;
+}
