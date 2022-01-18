@@ -1,18 +1,16 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Hello-React-Frontend Project
-> In this project, I built the frontend for a Rails-React app.
+> In this project, I built the frontend for a Rails-React app using React.
 
 ## Built with
-- Ruby
-- Rails
-- Webpacker
 - React
 - PostgresSQL
 - Lots of love :heart:
 
 
 ## Screenshot
+![Screen Shot 2022-01-18 at 5 19 34 PM](https://user-images.githubusercontent.com/62937819/149909305-cba886ba-c880-4fb0-93e1-ce92053ca164.png)
 
 
 ## Getting Started
