@@ -1,5 +1,5 @@
 const initialState = {
-  text: "hello",
+  msg: { text: "hello" },
 };
 
 const GET_RANDOM_MSG_REQUEST = "GET_RANDOM_MSG_REQUEST";

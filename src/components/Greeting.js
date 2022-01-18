@@ -6,7 +6,7 @@ import { getRandomMsg, getRandomMsgSuccess } from "../redux/dataReducer";
 export default function Message(props) {
   const { msg } = props;
   const dispatch = useDispatch();
-  const message = useSelector((state) => state.dataReducer);
+  const message = useSelector((state) => state.dataReducer.msg);
   console.log(message);
   return (
     <div>
