@@ -16,7 +16,7 @@ export default function Message() {
         Get Random Message
       </button>
       <h2>
-        The Message from store is
+        The Message from store is &nbsp;
         {message.text}
         .
       </h2>
